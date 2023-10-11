@@ -1,3 +1,10 @@
+export * from "./is"
+export * from "./Enum"
+export * from "./Date"
+export * from "./Reg"
+export * from "./Tree"
+export * from "./file"
+
 /**
  * @description 根据数字获取对应的英文字母
  * @params i=>被转换的数字  type => 转换结果大小写
@@ -28,4 +35,13 @@ export const numberGetLetter = (
 
 export const LetterGetNumber = (i: string) => {
 	return i.toUpperCase().charCodeAt(0) - 64
+}
+
+/**
+ * @description 删除路径中多余的斜杠
+ * @param path 路径
+ * @returns 格式化后的路径
+ */
+export const FormatPath = (path: string) => {
+	return path.replace(/[\/]+[\/]/g, "/").replace(":/", "://")
 }

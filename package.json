@@ -1,6 +1,6 @@
 {
 	"name": "fyhutils",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"type": "module",
 	"main": "dist/index.umd.js",
 	"module": "dist/index.es.js",
@@ -17,7 +17,14 @@
 		"preview": "vite preview"
 	},
 	"devDependencies": {
+		"@types/lodash-es": "^4.17.9",
 		"typescript": "^5.0.2",
 		"vite": "^4.4.5"
+	},
+	"publishConfig": {
+		"register": "https://registry.npmjs.org/"
+	},
+	"dependencies": {
+		"lodash-es": "^4.17.21"
 	}
 }
